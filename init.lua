@@ -18,7 +18,17 @@ return {
   },
 
   -- Set colorscheme to use
-  colorscheme = "astrodark",
+  colorscheme = "onedark",
+  -- colorscheme = "tokyonight",
+
+  highlights = {
+    default_theme = function(highlights)
+      local C = require("highlights.colors")
+
+      highlights.Normal = { fg = C.fg, bg = C.bg }
+      return highlights
+    end,
+  },
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
