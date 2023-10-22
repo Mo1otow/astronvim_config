@@ -18,8 +18,8 @@ return {
   },
 
   -- Set colorscheme to use
-  colorscheme = "onedark",
-  -- colorscheme = "tokyonight",
+  -- colorscheme = "onedark",
+  colorscheme = "tokyonight",
 
   highlights = {
     default_theme = function(highlights)
